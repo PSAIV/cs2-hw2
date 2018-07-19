@@ -1,9 +1,7 @@
-
-
+//Finds the standard deviation and mean of a given array of length 10.
 import java.util.Scanner;
 
-
-public class HW2_7_11 {
+public class StdDiv_and_Mean {
 
 	public static void main(String args[]) {
 		
