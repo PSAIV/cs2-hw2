@@ -1,9 +1,9 @@
-
+//Checks if a given array is already sorted or not.
 
 import java.util.Scanner;
 
 
-public class HW2_7_19 {
+public class Sorted_Check {
 
 	public static void main(String args[]) {
 		
