@@ -1,9 +1,8 @@
-
-
+//Finds and removes any duplicate instances of a number within a 10-digit array.
 import java.util.Scanner;
 
 
-public class HW2_7_15 {
+public class RemoveDupes {
 
 	public static void main(String args[]) {
 		
