@@ -1,9 +1,8 @@
-
-
+//Runs a single iteration of a pivot sort, such that all elements greater than the pivot are to its right, and all less are to its left.
 import java.util.Scanner;
 
 
-public class HW2_7_32 {
+public class PivotSort {
 
 	public static void main(String args[]) {
 		
