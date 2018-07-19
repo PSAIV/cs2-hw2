@@ -1,4 +1,4 @@
-public class HW2_9_7 {
+public class AccountTest {
 		
 	public static void main(String args[]){
 		
