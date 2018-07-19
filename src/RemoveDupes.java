@@ -1,9 +1,8 @@
-
-
+//Removes duplicates from a given array of size 10.
 import java.util.Scanner;
 
 
-public class HW2_7_15 {
+public class RemoveDupes {
 
 	public static void main(String args[]) {
 		
