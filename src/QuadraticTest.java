@@ -3,7 +3,7 @@
 import java.util.Scanner;
 
 
-public class HW2_9_10 {
+public class QuadraticTest {
 	
 	public static void main(String args[]) {
 		
