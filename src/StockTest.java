@@ -1,6 +1,6 @@
 
 
-public class HW2_9_2 {
+public class StockTest {
 		
 	public static void main(String args[]){
 		
