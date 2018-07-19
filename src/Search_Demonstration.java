@@ -1,9 +1,9 @@
-
+//Demonstrates the difference in time complexity for binary serach and linear search.
 
 import java.util.Random;
 
 
-public class HW2_7_16 {
+public class Search_Demonstration {
 	
 	public static void main(String args[]) {
 		
