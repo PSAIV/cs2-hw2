@@ -7,35 +7,16 @@ public class HW2_7_16 {
 	
 	public static void main(String args[]) {
 		
-		long startTime, endTime, executionTime;
 		Random rand = new Random();
 		int[] randArray = new int[100000];
-		int key = rand.nextInt(100000) + 1;
 		for(int i = 0; i < randArray.length; i++) {
 			randArray[i] = rand.nextInt(100000) + 1;
 		}
 		
-		//Obtain execution time for Linear Search function
-		startTime = System.currentTimeMillis();
-		System.out.println("Beginning linear search...");
-		linearSearch(randArray, key);
-		endTime = System.currentTimeMillis();
-		executionTime = endTime - startTime;
-		System.out.println("Linear search complete. Time for linear search: " + executionTime);
-		
-		//Sort the array prior to beginning binary search
-		System.out.println("\nSorting array...");
-		selectionSort(randArray);
-		System.out.println("Array sorted!");
-		
-		//Obtain execution time for Binary Search function
-		startTime = System.currentTimeMillis();
-		System.out.println("\nBeginning binary search...");
-		binarySearch(randArray, key);
-		endTime = System.currentTimeMillis();
-		executionTime = endTime - startTime;
-		System.out.println("Binary search complete. Time for binary search: " + executionTime);
-		
+		//Executes both searches 3 times, with the key being the beginning, middle, and end of each array
+		executeSearches(randArray, randArray[0]);
+		executeSearches(randArray, randArray[(randArray.length - 1) / 2]);
+		executeSearches(randArray, randArray[randArray.length - 1]);
 	}
 	
 	//Linear search function, as shown in Listing 7.6
@@ -86,5 +67,31 @@ public class HW2_7_16 {
 			}
 		}
 		return -low - 1;
+	}
+	
+	public static void executeSearches(int[] list, int key) {
+		
+		long startTime, endTime, executionTime;
+		
+		//Obtain execution time for Linear Search function
+		startTime = System.nanoTime();
+		System.out.println("Beginning linear search...");
+		linearSearch(list, key);
+		endTime = System.nanoTime();
+		executionTime = endTime - startTime;
+		System.out.println("Linear search complete at time. Time for linear search: " + executionTime +"ns");
+		
+		//Sort the array prior to beginning binary search
+		System.out.println("\nSorting array...");
+		selectionSort(list);
+		System.out.println("Array sorted!");
+		
+		//Obtain execution time for Binary Search function
+		startTime = System.nanoTime();
+		System.out.println("\nBeginning binary search...");
+		binarySearch(list, key);
+		endTime = System.nanoTime();
+		executionTime = endTime - startTime;
+		System.out.println("Binary search complete. Time for binary search: " + executionTime+"ns\n");
 	}
 }
