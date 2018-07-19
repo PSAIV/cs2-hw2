@@ -1,6 +1,6 @@
 
 
-public class HW2_9_1 {
+public class RectangleTest {
 		
 	public static void main(String args[]) {
 		
